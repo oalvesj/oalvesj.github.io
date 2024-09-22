@@ -8,6 +8,20 @@
 * Coded by www.devcrud.com
 
 =========================================================
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    p {
+        font-size: 0.9em; /* Reduz o tamanho do parágrafo */
+    }
+
+    .container {
+        padding: 10px; /* Ajusta o espaçamento interno */
+    }
+}
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
