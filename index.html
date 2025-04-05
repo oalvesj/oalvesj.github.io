@@ -74,10 +74,23 @@
             </div>
 
 		<!-- Imagem oaj -->
-		<div div class="img-holder">
-                <img src="https://lottie.host/e1989f20-5274-4bac-bc39-717b068b3aac/slaJepshNC.lottie" alt="">
-            </div>
-        </div>
+		<!-- Container da animação -->
+<div class="img-holder" id="lottie-animation">
+
+<!-- Script para rodar a animação -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-animation'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://lottie.host/e1989f20-5274-4bac-bc39-717b068b3aac/slaJepshNC.lottie' // ou um link https://assets.lottiefiles.com/....
+    });
+  });
+</script>
+   </div>
+      </div>
 
         <!-- About section -->
         <section id="about" class="section mt-3">
