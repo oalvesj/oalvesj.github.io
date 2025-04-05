@@ -69,10 +69,27 @@
                     <a class="social-item" href="https://github.com/oalvesj" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
-            <div class="img-holder">
+
+	<!-- Lottie -->
+
+	<div class="img-holder" id="lottie-animation"></div>
+		<script>
+  		lottie.loadAnimation({
+    		container: document.getElementById('lottie-animation'), // onde vai carregar
+    		renderer: 'svg',
+    		loop: true,
+    		autoplay: true,
+    		path: 'https://lottie.host/e1989f20-5274-4bac-bc39-717b068b3aac/slaJepshNC.lottie' // caminho para seu arquivo JSON
+  	});
+</script>
+
+
+		<!--
+		<div class="img-holder">
                 <img src="oaj_foto_4.png" alt="">
             </div>
         </div>
+	    -->
 
         <!-- About section -->
         <section id="about" class="section mt-3">
@@ -371,6 +388,9 @@
 		
         <!-- steller js -->
         <script src="assets/js/steller.js"></script>
+	<!-- lottie -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+
 
 </body>
 
