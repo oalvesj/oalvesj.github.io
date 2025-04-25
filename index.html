@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osni Alves - Portfólio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="img/logo-oaj.png" alt="Logo Osni Alves">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#linguagens">Linguagens</a></li>
+                    <li><a href="mailto:oalvesj@gmail.com" target="_blank">E-mail</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://encurtador.com.br/xu5GG" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://encurtador.com.br/BUeiP" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" aria-label="Alternar tema">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="menu-toggle">
+                <button id="menu-toggle-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Home -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Olá, eu sou <span>Osni Alves</span></h1>
+                    <h2>Seja bem-vindo à minha página.</h2>
+                    <p>É um gosto tê-lo por aqui.</p>
+                    <div class="hero-buttons">
+                        <div class="button-row">
+                            <a href="https://encurtador.com.br/kCP8k" class="btn btn-primary" target="_blank">Full Stack Web</a>
+                            <a href="https://acesse.one/EXRtl" class="btn btn-secondary" target="_blank">CAD, CAM, CNC</a>
+                        </div>
+                        <div class="button-row">
+                            <a href="https://encurtador.com.br/oBccw" class="btn btn-primary" target="_blank">Mkt Digital</a>
+                            <a href="https://l1nk.dev/K6USX" class="btn btn-secondary" target="_blank">Multimédia</a>
+                        </div>
+                        <div class="button-row">
+                            <a href="https://encurtador.com.br/RzjmS" class="btn btn-primary" target="_blank">Comunicação Social</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Parte comentada da imagem hero
+                <div class="hero-image">
+                    <img src="img/hero-image.png" alt="Ilustração Tech">
+                </div>
+                -->
+                
+                <!-- Container da animação -->
+                <div class="lottie-container" style="width: 50%; height: 50vh; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+                    <div id="lottie-animation"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Script da animação -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                lottie.loadAnimation({
+                    container: document.getElementById('lottie-animation'),
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    path: 'https://lottie.host/3964f8ee-4bc9-4580-a1f5-d96bc86c8e1f/lFRNwl43J1.json' // link válido em .json
+                });
+            });
+        </script>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Sobre</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="img/oaj_site_2.png" alt="Osni Alves">
+                    </div>
+                    <div class="about-text">
+                        <h3>Versatilidade</h3>
+                        <p>Tenho paixão por aprender e pela busca incessante por conhecimento técnico. Meu percurso é marcado pela diversidade de habilidades e pela capacidade de integrar múltiplas áreas de expertise.</p>
+                        <p>Como um profissional generalista, possuo conhecimento amplo e diversificado em segmentos distintos. Essa versatilidade me permite adaptação rápida a diferentes projetos e desafios.</p>
+                        <p>Como generalista, adoto uma abordagem proativa para o aprendizado e autoatualização.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Linguagens e Tecnologias -->
+        <section id="linguagens" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Linguagens & Tecnologias</h2>
+                
+                <div class="skills-category">
+                    <h3>Desenvolvimento Web</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react"></i>
+                            <h4>React</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-node-js"></i>
+                            <h4>Node.JS</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-php"></i>
+                            <h4>PHP</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database"></i>
+                            <h4>MySQL</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-bootstrap"></i>
+                            <h4>Bootstrap</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-sync-alt"></i>
+                            <h4>Ajax</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-file-code"></i>
+                            <h4>Json</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js-square"></i>
+                            <h4>TypeScript</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react"></i>
+                            <h4>Next.JS</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Ferramentas & Ambientes</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt"></i>
+                            <h4>Git</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-github"></i>
+                            <h4>GitHub</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-linux"></i>
+                            <h4>Linux</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-terminal"></i>
+                            <h4>Shell Linux</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Design & Audiovisual</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-figma"></i>
+                            <h4>Figma</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-paint-brush"></i>
+                            <h4>Photoshop</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-film"></i>
+                            <h4>Premiere</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>CAD/CAM/CNC</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fas fa-drafting-compass"></i>
+                            <h4>TopSolid</h4>
+                            <div class="skill-level" data-level="89"></div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-drafting-compass"></i>
+                            <h4>Solidworks</h4>
+                            <div class="skill-level" data-level="83"></div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-drafting-compass"></i>
+                            <h4>EasyStone</h4>
+                            <div class="skill-level" data-level="95"></div>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-drafting-compass"></i>
+                            <h4>SketchUp</h4>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Organização & Projetos</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-trello"></i>
+                            <h4>Trello</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-slack"></i>
+                            <h4>Slack</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-clipboard-list"></i>
+                            <h4>Notion</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-robot"></i>
+                            <h4>ChatGPT</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-robot"></i>
+                            <h4>Manus AI</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-robot"></i>
+                            <h4>Claude AI</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-paint-brush"></i>
+                            <h4>ImagineArt</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-codepen"></i>
+                            <h4>CodePen</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nova Seção: Idiomas -->
+<div class="skills-category">
+    <h3>Idiomas</h3>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <i class="fas fa-language"></i>
+            <h4>Inglês</h4>
+            <p>Nível B2</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-language"></i>
+            <h4>Espanhol</h4>
+            <p>Nível C1</p>
+        </div>
+    </div>
+</div>
+            </main>
+
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-photo">
+                            <img src="img/logo-oaj.png" alt="Foto Osni Alves">
+                        </div>
+                        <div class="footer-bottom">
+                            <p>&copy; 2025 <a href="#home">Osni Alves</a>. Todos os direitos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+    <script src="js/script.js"></script>
+</body>
+</html>
