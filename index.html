@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osni Alves - Portfólio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
 </head>
@@ -30,10 +29,17 @@
             <a href="https://encurtador.com.br/BUeiP" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         <div class="theme-toggle">
-            <button id="theme-toggle-btn"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></button>
+            <button id="theme-toggle-btn">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
         <div class="menu-toggle">
-            <button id="menu-toggle-btn"><span></span><span></span><span></span></button>
+            <button id="menu-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </div>
 </header>
@@ -66,33 +72,21 @@
         </div>
     </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            lottie.loadAnimation({
-                container: document.getElementById('lottie-animation'),
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-                path: 'https://lottie.host/3964f8ee-4bc9-4580-a1f5-d96bc86c8e1f/lFRNwl43J1.json'
-            });
-        });
-    </script>
-
-   <!-- Seção About -->
-<section id="sobre" class="about-section">
-    <div class="container about-flex">
-        <div class="about-image">
-            <img src="oaj_site_4.png" alt="Osni Alves">
+    <!-- Seção About -->
+    <section id="sobre" class="about-section">
+        <div class="container about-flex">
+            <div class="about-image">
+                <img src="oaj_site_4.png" alt="Osni Alves">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title">About</h2>
+                <h3>Versatility</h3>
+                <p>I have a passion for learning and a relentless pursuit of technical knowledge. My career is marked by a diversity of skills and the ability to integrate multiple areas of expertise.</p>
+                <p>As a generalist, I have broad and diverse knowledge across different segments. This versatility allows me to adapt quickly to different projects and challenges.</p>
+                <p>As a generalist, I take a proactive approach to learning and self-actualization.</p>
+            </div>
         </div>
-        <div class="about-text">
-            <h2 class="section-title">About</h2>
-            <h3>Versatility</h3>
-            <p>I have a passion for learning and a relentless pursuit of technical knowledge. My career is marked by a diversity of skills and the ability to integrate multiple areas of expertise.</p>
-            <p>As a generalist, I have broad and diverse knowledge across different segments. This versatility allows me to adapt quickly to different projects and challenges.</p>
-            <p>As a generalist, I take a proactive approach to learning and self-actualization.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Full Stack Development -->
     <section id="linguagens" class="skills-section">
@@ -245,6 +239,62 @@
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script>
+    // Lottie Animation
+    document.addEventListener('DOMContentLoaded', function () {
+        lottie.loadAnimation({
+            container: document.getElementById('lottie-animation'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'https://lottie.host/3964f8ee-4bc9-4580-a1f5-d96bc86c8e1f/lFRNwl43J1.json'
+        });
+    });
+
+    // Theme Toggle
+    const themeToggleBtn = document.getElementById('theme-toggle-btn');
+    const htmlElement = document.documentElement;
+
+    // Verificar preferência salva
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    htmlElement.setAttribute('data-theme', currentTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        htmlElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+
+    // Menu Mobile Toggle
+    const menuToggleBtn = document.getElementById('menu-toggle-btn');
+    const nav = document.querySelector('nav');
+
+    menuToggleBtn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        menuToggleBtn.classList.toggle('active');
+    });
+
+    // Fechar menu ao clicar em um link
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            menuToggleBtn.classList.remove('active');
+        });
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
+        } else {
+            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        }
+    });
+</script>
+
 </body>
 </html>
