@@ -85,14 +85,9 @@ function setupSmoothScroll() {
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
-                // Usa getBoundingClientRect para obter a posição real
-                const headerHeight = document.querySelector('header').offsetHeight;
-                const elementPosition = targetElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerHeight - 20;
-                
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
                 });
             }
         });
