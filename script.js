@@ -85,8 +85,11 @@ function setupSmoothScroll() {
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                
                 window.scrollTo({
-                    top: targetElement.offsetTop - 150, // Ajuste para o cabeçalho fixo
+                    top: targetPosition,
                     behavior: 'smooth'
                 });
             }
