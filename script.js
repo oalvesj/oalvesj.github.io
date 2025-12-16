@@ -86,7 +86,7 @@ function setupSmoothScroll() {
             
             if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - 80, // Ajuste para o cabeçalho fixo
+                    top: targetElement.offsetTop - 120, // Ajuste para o cabeçalho fixo
                     behavior: 'smooth'
                 });
             }
