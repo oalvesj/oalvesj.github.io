@@ -309,7 +309,7 @@ nav ul li a:hover::after {
 ============================== */
 .hero-section {
     padding: 160px 0 100px;
-    background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-color-alt) 100%);
+    background-color: var(--bg-color);
     position: relative;
     overflow: hidden;
 }
@@ -434,7 +434,11 @@ nav ul li a:hover::after {
     padding: 100px 0;
 }
 
-.skills-section:nth-of-type(even) {
+/* Alternância de cores - seções específicas em cinza */
+#sobre,
+#vibe-coding,
+#cad-cam-cnc,
+#languages {
     background-color: var(--bg-color-alt);
 }
 
