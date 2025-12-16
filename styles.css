@@ -399,14 +399,12 @@ nav ul li a:hover::after {
     border-radius: 10px;
     box-shadow: var(--card-shadow);
     transition: var(--transition);
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
 .about-image img:hover {
     transform: scale(1.02);
-}
-
-[data-theme="dark"] .about-image img {
-    filter: brightness(0.9) contrast(1.1);
 }
 
 .about-text {
@@ -430,16 +428,44 @@ nav ul li a:hover::after {
    SKILLS
 ============================== */
 .skills-section {
-    background-color: var(--bg-color);
     padding: 100px 0;
 }
 
-/* Alternância de cores - seções específicas em cinza */
-#sobre,
-#vibe-coding,
-#design-audiovisual,
+/* Cores específicas para cada seção */
+#home {
+    background-color: var(--bg-color);
+}
+
+#sobre {
+    background-color: var(--bg-color-alt);
+}
+
+#linguagens {
+    background-color: var(--bg-color);
+}
+
+#vibe-coding {
+    background-color: var(--bg-color-alt) !important;
+}
+
+#environment {
+    background-color: var(--bg-color);
+}
+
+#design-audiovisual {
+    background-color: var(--bg-color-alt);
+}
+
+#cad-cam-cnc {
+    background-color: var(--bg-color);
+}
+
 #productivity {
     background-color: var(--bg-color-alt);
+}
+
+#languages {
+    background-color: var(--bg-color);
 }
 
 .skills-category {
