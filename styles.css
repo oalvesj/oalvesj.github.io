@@ -437,8 +437,8 @@ nav ul li a:hover::after {
 /* Alternância de cores - seções específicas em cinza */
 #sobre,
 #vibe-coding,
-#cad-cam-cnc,
-#languages {
+#design-audiovisual,
+#productivity {
     background-color: var(--bg-color-alt);
 }
 
