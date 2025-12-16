@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osni Alves - Portfólio</title>
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-
 <header>
     <div class="container">
         <div class="logo">
@@ -19,7 +16,6 @@
                 <img src="logo-oaj.png" alt="Logo Osni Alves">
             </a>
         </div>
-
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -27,172 +23,443 @@
                 <li><a href="#linguagens">Full Stack Dev</a></li>
                 <li><a href="#design-audiovisual">Multimedia</a></li>
                 <li>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq1pfG3UZtn70yNn07D_ZsXjwbsDEVh52lDf9xDbNY8UeEmQ/viewform?usp=header" target="_blank">
-                        Talk to me
-                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq1pfG3UZtn70yNn07D_ZsXjwbsDEVh52lDf9xDbNY8UeEmQ/viewform?usp=header" target="_blank">Talk to me</a>
                 </li>
             </ul>
         </nav>
-
         <div class="social-links">
-            <a href="https://encurtador.com.br/xu5GG" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://encurtador.com.br/BUeiP" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://encurtador.com.br/xu5GG" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://encurtador.com.br/BUeiP" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
-
         <div class="theme-toggle">
-            <button id="theme-toggle-btn">
+            <button id="theme-toggle-btn" aria-label="Alternar tema">
                 <i class="fas fa-sun"></i>
                 <i class="fas fa-moon"></i>
             </button>
         </div>
-
         <div class="menu-toggle">
-            <button id="menu-toggle-btn">
-                <span></span><span></span><span></span>
+            <button id="menu-toggle-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
         </div>
     </div>
 </header>
-
-<main>
-
-<!-- HOME -->
-<section id="home" class="hero-section">
-    <div class="container">
-        <div class="hero-content">
-            <h1>Hello, I am <span>Osni Alves</span></h1>
-            <h2>Welcome to my page.</h2>
-            <p>It's a pleasure to have you here.</p>
-
-            <div class="hero-buttons">
-                <div class="button-row">
-                    <a href="#" class="btn btn-primary">Full Stack Web</a>
-                    <a href="#" class="btn btn-secondary">CAD, CAM, CNC</a>
+    <main>
+        <!-- Seção Home -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hello, I am <span>Osni Alves</span></h1>
+                    <h2>Welcome to my page.</h2>
+                    <p>It's a pleasure to have you here.</p>
+                    <div class="hero-buttons">
+                        <div class="button-row">
+                            <a href="https://lnkd.in/p/d_hCFJaw" class="btn btn-primary" target="_blank">Full Stack Web</a>
+                            <a href="https://lnkd.in/p/dBputwKu" class="btn btn-secondary" target="_blank">CAD, CAM, CNC</a>
+                        </div>
+                        <div class="button-row">
+                            <a href="https://lnkd.in/p/dS-F-7rd" class="btn btn-primary" target="_blank">Design</a>
+                            <a href="https://lnkd.in/p/drYASYjf" class="btn btn-secondary" target="_blank">Multimedia</a>
+                        </div>
+                        <div class="button-row">
+                            <a href="https://lnkd.in/p/dtZPv5Np" class="btn btn-primary" target="_blank">Mass Communication</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="button-row">
-                    <a href="#" class="btn btn-primary">Design</a>
-                    <a href="#" class="btn btn-secondary">Multimedia</a>
+
+                <!-- Parte comentada da imagem hero
+                <div class="hero-image">
+                    <img src="img/hero-image.png" alt="Ilustração Tech">
+                </div>
+                -->
+
+                <!-- Container da animação -->
+                <div class="lottie-container" style="width: 50%; height: 50vh; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+                    <div id="lottie-animation"></div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="lottie-container" style="width:50%;height:50vh;margin:auto;">
-            <div id="lottie-animation"></div>
-        </div>
-    </div>
-</section>
+        <!-- Script da animação -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                lottie.loadAnimation({
+                    container: document.getElementById('lottie-animation'),
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    path: 'https://lottie.host/3964f8ee-4bc9-4580-a1f5-d96bc86c8e1f/lFRNwl43J1.json'
+                });
+            });
+        </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    lottie.loadAnimation({
-        container: document.getElementById('lottie-animation'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: 'https://lottie.host/3964f8ee-4bc9-4580-a1f5-d96bc86c8e1f/lFRNwl43J1.json'
-    });
-});
-</script>
-
-<!-- ABOUT -->
-<section id="sobre" class="about-section">
-    <div class="container">
-        <h2 class="section-title">About</h2>
-        <div class="about-content">
-            <div class="about-image">
-                <img src="oaj_site_4.png" alt="Osni Alves">
+        <!-- Seção Sobre -->
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="oaj_site_4.png" alt="Osni Alves">
+                    </div>
+                    <div class="about-text">
+                        <h3>Versatility</h3>
+                        <p>I have a passion for learning and a relentless pursuit of technical knowledge. My career is marked by a diversity of skills and the ability to integrate multiple areas of expertise.</p>
+                        <p>As a generalist, I have broad and diverse knowledge across different segments. This versatility allows me to adapt quickly to different projects and challenges.</p>
+                        <p>As a generalist, I take a proactive approach to learning and self-actualization.</p>
+                    </div>
+                </div>
             </div>
-            <div class="about-text">
-                <h3>Versatility</h3>
-                <p>I have a passion for learning and a relentless pursuit of technical knowledge.</p>
-                <p>As a generalist, I have broad and diverse knowledge across different segments.</p>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- FULL STACK -->
+        <!-- Seção Linguagens e Tecnologias -->
 <section id="linguagens" class="skills-section">
     <div class="container">
         <h2 class="section-title">Full Stack Development</h2>
 
-        <!-- FRONT / BACK -->
         <div class="skills-category">
-            <h3>Front-End & Back-End</h3>
+            <h3>Front-End &amp; Back-End</h3>
             <div class="skills-grid">
-                <div class="skill-card"><i class="fab fa-html5"></i><h4>HTML</h4></div>
-                <div class="skill-card"><i class="fab fa-css3-alt"></i><h4>CSS</h4></div>
-                <div class="skill-card"><i class="fab fa-js"></i><h4>JavaScript</h4></div>
-                <div class="skill-card"><i class="fab fa-react"></i><h4>React</h4></div>
-                <div class="skill-card"><i class="fab fa-node-js"></i><h4>Node.js</h4></div>
-                <div class="skill-card"><i class="fab fa-php"></i><h4>PHP</h4></div>
-                <div class="skill-card"><i class="fas fa-database"></i><h4>MySQL</h4></div>
-                <div class="skill-card"><i class="fab fa-bootstrap"></i><h4>Bootstrap</h4></div>
-                <div class="skill-card"><i class="fab fa-python"></i><h4>Python</h4></div>
-                <div class="skill-card"><i class="fas fa-leaf"></i><h4>Django</h4></div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h4>HTML</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h4>React</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <h4>Node.JS</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-php"></i>
+                    <h4>PHP</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h4>MySQL</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-bootstrap"></i>
+                    <h4>Bootstrap</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h4>Ajax</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-file-code"></i>
+                    <h4>JSON</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js-square"></i>
+                    <h4>TypeScript</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h4>Next.JS</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h4>Python</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-leaf"></i>
+                    <h4>Django</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h4>SQLite3</h4>
+                </div>
             </div>
         </div>
 
-        <!-- VIBE CODING -->
+        <!-- NOVA SEÇÃO: VIBE CODING -->
         <div class="skills-category">
             <h3>Vibe Coding</h3>
-            <p class="skills-subtitle">Low Code</p>
-
+            <h4 style="text-align: center; margin-bottom: 2rem; color: #666;">Low Code</h4>
             <div class="skills-grid">
-                <div class="skill-card"><i class="fas fa-code"></i><h4>Cursor</h4></div>
-                <div class="skill-card"><i class="fas fa-project-diagram"></i><h4>n8n</h4></div>
-                <div class="skill-card"><i class="fas fa-random"></i><h4>Zapier</h4></div>
-                <div class="skill-card"><i class="fas fa-robot"></i><h4>ChatGPT</h4></div>
-                <div class="skill-card"><i class="fas fa-robot"></i><h4>Manus AI</h4></div>
-                <div class="skill-card"><i class="fas fa-robot"></i><h4>Claude AI</h4></div>
-                <div class="skill-card"><i class="fas fa-paint-brush"></i><h4>Imagine Art</h4></div>
-                <div class="skill-card"><i class="fab fa-codepen"></i><h4>CodePen</h4></div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h4>Cursor</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h4>N8N</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Zapier</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    <h4>ChatGPT</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    <h4>Manus AI</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    <h4>Claude AI</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h4>Imagine Art</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-codepen"></i>
+                    <h4>CodePen</h4>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- DEV ENVIRONMENT (LIMPO) -->
-<section id="environment" class="skills-section">
-    <div class="container">
-        <h2 class="section-title">Development Environment</h2>
+        <!-- Seção Development Environment -->
+        <section id="environment" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Development Environment</h2>
 
-        <div class="skills-category">
-            <div class="skills-grid">
-                <div class="skill-card"><i class="fab fa-git-alt"></i><h4>Git</h4></div>
-                <div class="skill-card"><i class="fab fa-github"></i><h4>GitHub</h4></div>
-                <div class="skill-card"><i class="fab fa-linux"></i><h4>Linux</h4></div>
-                <div class="skill-card"><i class="fas fa-terminal"></i><h4>Shell Linux</h4></div>
-                <div class="skill-card"><i class="fas fa-code"></i><h4>VS Code</h4></div>
-                <div class="skill-card"><i class="fas fa-code"></i><h4>PyCharm</h4></div>
-                <div class="skill-card"><i class="fas fa-code"></i><h4>Sublime Text</h4></div>
-                <div class="skill-card"><i class="fas fa-code"></i><h4>Notepad++</h4></div>
+                <div class="skills-category">
+                    <h3>Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt"></i>
+                            <h4>Git</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-github"></i>
+                            <h4>GitHub</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-linux"></i>
+                            <h4>Linux</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-terminal"></i>
+                            <h4>Shell Linux</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-code"></i>
+                            <h4>VS Code</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-code"></i>
+                            <h4>PyCharm</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-code"></i>
+                            <h4>Sublime Text</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-code"></i>
+                            <h4>Notepad++</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-code"></i>
+                            <h4>IDLE Python</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- DESIGN -->
+        <!-- Seção Design & Audiovisual (INDEPENDENTE) -->
 <section id="design-audiovisual" class="skills-section">
     <div class="container">
-        <h2 class="section-title">Design & Audiovisual</h2>
-        <div class="skills-grid">
-            <div class="skill-card"><i class="fab fa-figma"></i><h4>Figma</h4></div>
-            <div class="skill-card"><i class="fas fa-paint-brush"></i><h4>Photoshop</h4></div>
-            <div class="skill-card"><i class="fas fa-film"></i><h4>Premiere</h4></div>
+        <h2 class="section-title">Design &amp; Audiovisual</h2>
+        <div class="skills-category">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-pencil-alt"></i>
+                    <h4>Illustrator</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h4>Photoshop</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h4>InDesign</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-camera-retro"></i>
+                    <h4>Lightroom</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-film"></i>
+                    <h4>Premiere</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-vector-square"></i>
+                    <h4>Inkscape</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-figma"></i>
+                    <h4>Figma</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>MailChimp</h4>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+        
+        <!-- Seção CAD/CAM/CNC (INDEPENDENTE) -->
+        <section id="cad-cam-cnc" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">CAD/CAM/CNC</h2>
+                <div class="skills-category">
+                    <div class="skills-grid">
+                        <!-- Cards com link externo -->
+                        <a href="https://lnkd.in/p/dZmuuJYW" target="_blank" rel="noopener noreferrer" class="skill-card-link">
+                            <div class="skill-card">
+                                <i class="fas fa-drafting-compass"></i>
+                                <h4>TopSolid</h4>
+                                <div class="skill-level" data-level="89"></div>
+                                <p class="skill-text-level">Intermediate Level</p>
+                            </div>
+                        </a>
 
-</main>
+                        <a href="https://encurtador.com.br/nwM68" target="_blank" rel="noopener noreferrer" class="skill-card-link">
+                            <div class="skill-card">
+                                <i class="fas fa-drafting-compass"></i>
+                                <h4>Siemens NX</h4>
+                                <div class="skill-level" data-level="83"></div>
+                                <p class="skill-text-level">Basic Level</p>
+                            </div>
+                        </a>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; 2025 Osni Alves. All rights reserved.</p>
-    </div>
-</footer>
+                        <a href="https://encurtador.com.br/r6LQF" target="_blank" rel="noopener noreferrer" class="skill-card-link">
+                            <div class="skill-card">
+                                <i class="fas fa-drafting-compass"></i>
+                                <h4>SolidWorks</h4>
+                                <div class="skill-level" data-level="83"></div>
+                                <p class="skill-text-level">Basic Level</p>
+                            </div>
+                        </a>
 
-<script src="script.js"></script>
+                        <!-- Cards sem link externo -->
+                        <div class="skill-card">
+                            <i class="fas fa-drafting-compass"></i>
+                            <h4>AutoCAD</h4>
+                            <div class="skill-level" data-level="83"></div>
+                            <p class="skill-text-level">Beginner</p>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="fas fa-drafting-compass"></i>
+                            <h4>EasyStone</h4>
+                            <div class="skill-level" data-level="95"></div>
+                            <p class="skill-text-level">Intermediate Level</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Productivity & Collaboration Tools (INDEPENDENTE) -->
+        <section id="productivity" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Productivity &amp; Collaboration Tools</h2>
+                <div class="skills-category">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-trello"></i>
+                            <h4>Trello</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-slack"></i>
+                            <h4>Slack</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-clipboard-list"></i>
+                            <h4>Notion</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-comments"></i>
+                            <h4>Microsoft Teams</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-comments"></i>
+                            <h4>TeamViewer</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-comments"></i>
+                            <h4>Zoom</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-comments"></i>
+                            <h4>Google Meet</h4>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-google"></i>
+                            <h4>Google Workspace</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Languages (INDEPENDENTE) -->
+        <section id="languages" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Languages</h2>
+                <div class="skills-category">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fas fa-language"></i>
+                            <h4>Português</h4>
+                            <p>Native speaker</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-language"></i>
+                            <h4>Inglês</h4>
+                            <p>Nível B2</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-language"></i>
+                            <h4>Espanhol</h4>
+                            <p>Nível C1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-photo">
+                    <img src="logo-oaj.png" alt="Foto Osni Alves">
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 <a href="#home">Osni Alves</a>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
