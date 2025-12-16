@@ -464,6 +464,18 @@ nav ul li a:hover::after {
     gap: 30px;
 }
 
+/* Centralizar quando houver poucos cards */
+#languages .skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#languages .skill-card {
+    flex: 0 0 250px;
+}
+
 .skill-card-link {
     text-decoration: none;
     color: inherit;
