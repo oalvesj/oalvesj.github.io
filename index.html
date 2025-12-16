@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osni Alves - Portfólio</title>
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
 <header>
@@ -19,119 +17,71 @@
                 <img src="logo-oaj.png" alt="Logo Osni Alves">
             </a>
         </div>
-
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">About</a></li>
                 <li><a href="#linguagens">Full Stack Dev</a></li>
                 <li><a href="#design-audiovisual">Multimedia</a></li>
-                <li>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq1pfG3UZtn70yNn07D_ZsXjwbsDEVh52lDf9xDbNY8UeEmQ/viewform?usp=header" target="_blank">
-                        Talk to me
-                    </a>
-                </li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq1pfG3UZtn70yNn07D_ZsXjwbsDEVh52lDf9xDbNY8UeEmQ/viewform?usp=header" target="_blank">Talk to me</a></li>
             </ul>
         </nav>
-
         <div class="social-links">
             <a href="https://encurtador.com.br/xu5GG" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://encurtador.com.br/BUeiP" target="_blank"><i class="fab fa-github"></i></a>
         </div>
-
         <div class="theme-toggle">
-            <button id="theme-toggle-btn" aria-label="Alternar tema">
+            <button id="theme-toggle-btn">
                 <i class="fas fa-sun"></i>
                 <i class="fas fa-moon"></i>
             </button>
         </div>
-
         <div class="menu-toggle">
-            <button id="menu-toggle-btn" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button id="menu-toggle-btn">
+                <span></span><span></span><span></span>
             </button>
         </div>
     </div>
 </header>
 
-<main>
+<main id="home">
 
-<!-- HERO -->
-<section id="home" class="hero-section">
+<!-- Hero Section -->
+<section class="hero-section">
     <div class="container">
-
         <div class="hero-content">
-            <h1>Hello, I am <span>Osni Alves</span></h1>
-            <h2>Welcome to my page.</h2>
-            <p>It's a pleasure to have you here.</p>
-
+            <h1>Hello, I'm <span>Osni Alves</span></h1>
+            <h2>Full Stack Developer & Multimedia Designer</h2>
+            <p>Transforming ideas into digital solutions with creativity and code.</p>
             <div class="hero-buttons">
-                <div class="button-row">
-                    <a href="https://lnkd.in/p/d_hCFJaw" class="btn btn-primary" target="_blank">Full Stack</a>
-                    <a href="https://lnkd.in/p/dS-F-7rd" class="btn btn-secondary" target="_blank">Design</a>
-                </div>
-
-                <div class="button-row">
-                    <a href="https://lnkd.in/p/drYASYjf" class="btn btn-primary" target="_blank">Multimedia</a>
-                    <a href="https://lnkd.in/p/dBputwKu" class="btn btn-secondary" target="_blank">CAD, CAM, CNC</a>
-                </div>
-
-                <div class="button-row">
-                    <a href="https://lnkd.in/p/dtZPv5Np" class="btn btn-primary" target="_blank">
-                        Mass communication
-                    </a>
-                </div>
+                <a href="#linguagens" class="btn btn-primary">See Skills</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq1pfG3UZtn70yNn07D_ZsXjwbsDEVh52lDf9xDbNY8UeEmQ/viewform?usp=header" target="_blank" class="btn btn-secondary">Talk to Me</a>
             </div>
         </div>
-
-        <!-- LOTTIE -->
-        <div class="lottie-container">
-            <div id="lottie-animation"></div>
+        <div class="hero-image">
+            <img src="hero-image.png" alt="Osni Alves">
         </div>
-
     </div>
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    lottie.loadAnimation({
-        container: document.getElementById('lottie-animation'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: 'https://lottie.host/3964f8ee-4bc9-4580-a1f5-d96bc86c8e1f/lFRNwl43J1.json'
-    });
-});
-</script>
-
-<!-- SOBRE -->
+<!-- About Section -->
 <section id="sobre" class="about-section">
-    <div class="container">
-        <h2 class="section-title">About</h2>
-
-        <div class="about-content">
-            <div class="about-image">
-                <img src="oaj_site_4.png" alt="Osni Alves">
-            </div>
-
-            <div class="about-text">
-                <h3>Versatility</h3>
-                <p>I have a passion for learning and a relentless pursuit of technical knowledge.</p>
-                <p>As a generalist, I have broad and diverse knowledge across different segments.</p>
-                <p>As a generalist, I take a proactive approach to learning and self-actualization.</p>
-            </div>
+    <div class="container about-content">
+        <div class="about-image">
+            <img src="about-me.jpg" alt="About Osni Alves">
+        </div>
+        <div class="about-text">
+            <h3>About Me</h3>
+            <p>I am a passionate Full Stack Developer with experience in Front-End, Back-End, and multimedia projects. I love creating intuitive, responsive, and engaging digital experiences.</p>
+            <p>My goal is to combine technology and creativity to deliver high-quality solutions that make an impact.</p>
         </div>
     </div>
 </section>
 
-<!-- FULL STACK -->
+<!-- Full Stack Skills -->
 <section id="linguagens" class="skills-section">
     <div class="container">
         <h2 class="section-title">Full Stack Development</h2>
-
         <div class="skills-category">
             <h3>Front-End & Back-End</h3>
             <div class="skills-grid">
@@ -152,50 +102,114 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="skill-card"><i class="fas fa-database"></i><h4>SQLite3</h4></div>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- VIBE CODING -->
-<section id="vibe-coding" class="skills-section">
-    <div class="container">
-        <h2 class="section-title">Vibe Coding</h2>
-        <div class="skills-grid">
-            <div class="skill-card"><h4>Cursor</h4></div>
-            <div class="skill-card"><h4>N8N</h4></div>
-            <div class="skill-card"><h4>Zapier</h4></div>
-            <div class="skill-card"><h4>ChatGPT</h4></div>
-            <div class="skill-card"><h4>Claude</h4></div>
-            <div class="skill-card"><h4>Gemini</h4></div>
-            <div class="skill-card"><h4>Grok</h4></div>
+        <div class="skills-category">
+            <h3>Vibe Coding / Low Code</h3>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fas fa-code"></i><h4>Cursor</h4></div>
+                <div class="skill-card"><i class="fas fa-project-diagram"></i><h4>n8n</h4></div>
+                <div class="skill-card"><i class="fas fa-random"></i><h4>Zapier</h4></div>
+                <div class="skill-card"><i class="fas fa-robot"></i><h4>ChatGPT</h4></div>
+                <div class="skill-card"><i class="fas fa-robot"></i><h4>Manus AI</h4></div>
+                <div class="skill-card"><i class="fas fa-robot"></i><h4>Claude AI</h4></div>
+                <div class="skill-card"><i class="fas fa-paint-brush"></i><h4>Imagine Art</h4></div>
+                <div class="skill-card"><i class="fab fa-codepen"></i><h4>CodePen</h4></div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- DESIGN -->
+<!-- Development Environment -->
+<section id="environment" class="skills-section">
+    <div class="container">
+        <h2 class="section-title">Development Environment</h2>
+        <div class="skills-category">
+            <h3>Tools</h3>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-git-alt"></i><h4>Git</h4></div>
+                <div class="skill-card"><i class="fab fa-github"></i><h4>GitHub</h4></div>
+                <div class="skill-card"><i class="fab fa-linux"></i><h4>Linux</h4></div>
+                <div class="skill-card"><i class="fas fa-terminal"></i><h4>Shell Linux</h4></div>
+                <div class="skill-card"><i class="fas fa-code"></i><h4>VS Code</h4></div>
+                <div class="skill-card"><i class="fas fa-code"></i><h4>PyCharm</h4></div>
+                <div class="skill-card"><i class="fas fa-code"></i><h4>Sublime Text</h4></div>
+                <div class="skill-card"><i class="fas fa-code"></i><h4>Notepad++</h4></div>
+                <div class="skill-card"><i class="fas fa-code"></i><h4>IDLE Python</h4></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Design & Audiovisual -->
 <section id="design-audiovisual" class="skills-section">
     <div class="container">
         <h2 class="section-title">Design & Audiovisual</h2>
-        <div class="skills-grid">
-            <div class="skill-card"><h4>Photoshop</h4></div>
-            <div class="skill-card"><h4>Illustrator</h4></div>
-            <div class="skill-card"><h4>Premiere</h4></div>
-            <div class="skill-card"><h4>Figma</h4></div>
+        <div class="skills-category">
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fas fa-pencil-alt"></i><h4>Illustrator</h4></div>
+                <div class="skill-card"><i class="fas fa-paint-brush"></i><h4>Photoshop</h4></div>
+                <div class="skill-card"><i class="fas fa-file-alt"></i><h4>InDesign</h4></div>
+                <div class="skill-card"><i class="fas fa-camera-retro"></i><h4>Lightroom</h4></div>
+                <div class="skill-card"><i class="fas fa-film"></i><h4>Premiere</h4></div>
+                <div class="skill-card"><i class="fab fa-figma"></i><h4>Figma</h4></div>
+                <div class="skill-card"><i class="fas fa-envelope"></i><h4>MailChimp</h4></div>
+                <div class="skill-card"><i class="fas fa-vector-square"></i><h4>Inkscape</h4></div>
+            </div>
         </div>
     </div>
 </section>
 
-</main>
-
-<footer class="site-footer">
+<!-- CAD/CAM/CNC -->
+<section id="cad-cam-cnc" class="skills-section">
     <div class="container">
-        <div class="footer-content">
-            <div class="footer-photo">
-                <img src="logo-oaj.png" alt="Osni Alves">
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 <a href="#home">Osni Alves</a>. All rights reserved.</p>
+        <h2 class="section-title">CAD/CAM/CNC</h2>
+        <div class="skills-category">
+            <div class="skills-grid">
+                <a href="https://lnkd.in/p/dZmuuJYW" target="_blank" class="skill-card-link"><i class="fas fa-cogs"></i><h4>AutoCAD</h4></a>
+                <a href="https://lnkd.in/p/dZmuuJYW" target="_blank" class="skill-card-link"><i class="fas fa-cogs"></i><h4>SolidWorks</h4></a>
+                <a href="https://lnkd.in/p/dZmuuJYW" target="_blank" class="skill-card-link"><i class="fas fa-industry"></i><h4>EasyStone</h4></a>
+                <a href="https://lnkd.in/p/dZmuuJYW" target="_blank" class="skill-card-link"><i class="fas fa-industry"></i><h4>CNC Programming</h4></a>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Productivity & Collaboration -->
+<section id="productivity" class="skills-section">
+    <div class="container">
+        <h2 class="section-title">Productivity & Collaboration Tools</h2>
+        <div class="skills-category">
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-trello"></i><h4>Trello</h4></div>
+                <div class="skill-card"><i class="fas fa-calendar-alt"></i><h4>Google Calendar</h4></div>
+                <div class="skill-card"><i class="fas fa-envelope"></i><h4>Email</h4></div>
+                <div class="skill-card"><i class="fas fa-file-alt"></i><h4>Docs/Sheets</h4></div>
+                <div class="skill-card"><i class="fab fa-google"></i><h4>Google Workspace</h4></div>
+                <div class="skill-card"><i class="fas fa-notes-medical"></i><h4>Notion</h4></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Languages -->
+<section id="languages" class="skills-section">
+    <div class="container">
+        <h2 class="section-title">Languages</h2>
+        <div class="skills-category">
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fas fa-language"></i><h4>English</h4></div>
+                <div class="skill-card"><i class="fas fa-language"></i><h4>Spanish</h4></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <img src="logo-oaj.png" alt="Osni Alves">
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Osni Alves. All rights reserved. <a href="#home">Back to top</a></p>
     </div>
 </footer>
 
