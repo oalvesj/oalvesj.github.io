@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lottie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
 </head>
 <body>
 
 <header>
     <div class="container">
         <div class="logo">
-            <a href="#home">
-                <img src="logo-oaj.png" alt="Logo Osni Alves">
-            </a>
+            <a href="#home"><img src="logo-oaj.png" alt="Logo Osni Alves"></a>
         </div>
         <nav>
             <ul>
@@ -23,9 +23,7 @@
                 <li><a href="#sobre">About</a></li>
                 <li><a href="#linguagens">Full Stack Dev</a></li>
                 <li><a href="#design-audiovisual">Multimedia</a></li>
-                <li>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq1pfG3UZtn70yNn07D_ZsXjwbsDEVh52lDf9xDbNY8UeEmQ/viewform?usp=header" target="_blank">Talk to me</a>
-                </li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq1pfG3UZtn70yNn07D_ZsXjwbsDEVh52lDf9xDbNY8UeEmQ/viewform?usp=header" target="_blank">Talk to me</a></li>
             </ul>
         </nav>
         <div class="social-links">
@@ -33,36 +31,41 @@
             <a href="https://encurtador.com.br/BUeiP" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         <div class="theme-toggle">
-            <button id="theme-toggle-btn">
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-moon"></i>
-            </button>
+            <button id="theme-toggle-btn"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></button>
         </div>
         <div class="menu-toggle">
-            <button id="menu-toggle-btn">
-                <span></span><span></span><span></span>
-            </button>
+            <button id="menu-toggle-btn"><span></span><span></span><span></span></button>
         </div>
     </div>
 </header>
 
 <main>
 
-<!-- HOME Section (Adicionada para completar a navegação) -->
+<!-- HOME Section -->
 <section id="home" class="hero-section">
     <div class="container">
         <h1 class="hero-title">Osni Alves</h1>
         <p class="hero-subtitle">Desenvolvedor Full Stack e Designer Multimídia</p>
-        <!-- Adicione aqui o conteúdo original da sua seção Home -->
+        <div id="lottie-animation" style="width:400px;height:400px;margin:auto;"></div>
     </div>
 </section>
 
-<!-- ABOUT Section (Adicionada para completar a navegação) -->
+<!-- Lottie Animation Script -->
+<script>
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'lottie.json' // Coloque aqui o caminho do seu arquivo JSON da animação
+  });
+</script>
+
+<!-- ABOUT Section -->
 <section id="sobre" class="about-section">
     <div class="container">
         <h2 class="section-title">About</h2>
-        <!-- Adicione aqui o conteúdo original da sua seção About -->
-        <p>Esta é a seção "About" que estava faltando. Por favor, insira seu conteúdo original aqui.</p>
+        <p>Esta é a seção "About". Insira seu conteúdo original aqui.</p>
     </div>
 </section>
 
@@ -70,8 +73,9 @@
 <section id="linguagens" class="skills-section">
     <div class="container">
         <h2 class="section-title">Full Stack Development</h2>
+
         <div class="skills-category">
-            <h3>Front-End &amp; Back-End</h3>
+            <h3>Front-End & Back-End</h3>
             <div class="skills-grid">
                 <div class="skill-card"><i class="fab fa-html5"></i><h4>HTML</h4></div>
                 <div class="skill-card"><i class="fab fa-css3-alt"></i><h4>CSS</h4></div>
@@ -132,7 +136,7 @@
 <!-- Design & Audiovisual -->
 <section id="design-audiovisual" class="skills-section">
     <div class="container">
-        <h2 class="section-title">Design &amp; Audiovisual</h2>
+        <h2 class="section-title">Design & Audiovisual</h2>
         <div class="skills-category">
             <div class="skills-grid">
                 <div class="skill-card"><i class="fas fa-pencil-alt"></i><h4>Illustrator</h4></div>
@@ -154,15 +158,9 @@
         <div class="skills-category">
             <h3>CAD/CAM/CNC</h3>
             <div class="skills-grid">
-                <a href="https://lnkd.in/p/dZmuuJYW" target="_blank" class="skill-card-link">
-                    <div class="skill-card"><i class="fas fa-cube"></i><h4>EasyStone</h4></div>
-                </a>
-                <a href="https://www.solidworks.com" target="_blank" class="skill-card-link">
-                    <div class="skill-card"><i class="fas fa-cogs"></i><h4>SolidWorks</h4></div>
-                </a>
-                <a href="https://www.autodesk.com/products/fusion-360" target="_blank" class="skill-card-link">
-                    <div class="skill-card"><i class="fas fa-project-diagram"></i><h4>Fusion 360</h4></div>
-                </a>
+                <a href="https://lnkd.in/p/dZmuuJYW" target="_blank" class="skill-card-link"><div class="skill-card"><i class="fas fa-cube"></i><h4>EasyStone</h4></div></a>
+                <a href="https://www.solidworks.com" target="_blank" class="skill-card-link"><div class="skill-card"><i class="fas fa-cogs"></i><h4>SolidWorks</h4></div></a>
+                <a href="https://www.autodesk.com/products/fusion-360" target="_blank" class="skill-card-link"><div class="skill-card"><i class="fas fa-project-diagram"></i><h4>Fusion 360</h4></div></a>
             </div>
         </div>
     </div>
@@ -171,7 +169,7 @@
 <!-- Productivity & Collaboration Tools -->
 <section id="productivity" class="skills-section">
     <div class="container">
-        <h2 class="section-title">Productivity &amp; Collaboration Tools</h2>
+        <h2 class="section-title">Productivity & Collaboration Tools</h2>
         <div class="skills-category">
             <h3>Productivity & Collaboration Tools</h3>
             <div class="skills-grid">
