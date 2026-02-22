@@ -100,9 +100,6 @@ img {
 
 /* ==============================
    BOTÕES
-   FIX: Adicionado "color" explícito nos
-   estados :hover para evitar que a regra
-   global "a:hover" sobreponha a cor do texto.
 ============================== */
 .btn {
     display: inline-block;
@@ -123,7 +120,7 @@ img {
 
 .btn-primary:hover {
     background-color: var(--primary-color-hover);
-    color: var(--text-color-light); /* FIX: mantém texto branco no hover */
+    color: var(--text-color-light);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(255, 122, 48, 0.3);
 }
@@ -378,10 +375,10 @@ nav ul li a:hover::after {
 /* ==============================
    ABOUT / VERSATILITY
 ============================== */
-.about-section {
-    background-color: transparent;
-    position: relative;
+section#sobre.about-section {
+    background-color: var(--bg-color) !important;
     padding: 60px 0;
+    position: relative;
 }
 
 .about-flex {
@@ -441,10 +438,6 @@ nav ul li a:hover::after {
 /* Cores específicas para cada seção */
 #home {
     background-color: var(--bg-color);
-}
-
-#sobre {
-    background-color: transparent;
 }
 
 #linguagens {
@@ -636,6 +629,7 @@ nav ul li a:hover::after {
     .about-flex {
         flex-direction: column;
         text-align: center;
+        padding: 30px 20px;
     }
     
     .about-image,
