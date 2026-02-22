@@ -379,7 +379,7 @@ nav ul li a:hover::after {
    ABOUT / VERSATILITY
 ============================== */
 .about-section {
-    background-color: var(--bg-color-alt);
+    background-color: transparent;
     position: relative;
     padding: 60px 0;
 }
@@ -390,6 +390,9 @@ nav ul li a:hover::after {
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
+    background-color: var(--bg-color-alt);
+    border-radius: 12px;
+    padding: 40px;
 }
 
 .about-image {
