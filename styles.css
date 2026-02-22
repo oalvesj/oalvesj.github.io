@@ -444,7 +444,7 @@ nav ul li a:hover::after {
 }
 
 #sobre {
-    background-color: var(--bg-color-alt);
+    background-color: transparent;
 }
 
 #linguagens {
