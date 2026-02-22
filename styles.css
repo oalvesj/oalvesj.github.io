@@ -100,6 +100,9 @@ img {
 
 /* ==============================
    BOTÕES
+   FIX: Adicionado "color" explícito nos
+   estados :hover para evitar que a regra
+   global "a:hover" sobreponha a cor do texto.
 ============================== */
 .btn {
     display: inline-block;
@@ -120,6 +123,7 @@ img {
 
 .btn-primary:hover {
     background-color: var(--primary-color-hover);
+    color: var(--text-color-light); /* FIX: mantém texto branco no hover */
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(255, 122, 48, 0.3);
 }
