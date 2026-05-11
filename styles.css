@@ -395,7 +395,7 @@ section#sobre.about-section {
 .about-image {
     flex: 0 0 40%;
     text-align: center;
-    margin-top: auto;
+    margin-top: 220px;
 }
 
 .about-image img {
