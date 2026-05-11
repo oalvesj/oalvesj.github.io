@@ -563,49 +563,9 @@ section#sobre.about-section {
     margin-bottom: 50px;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: start;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-top: 10px;
-}
-
-.contact-info-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-}
-
-.contact-info-item i {
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    margin-top: 4px;
-    min-width: 24px;
-    text-align: center;
-}
-
-.contact-info-item strong {
-    display: block;
-    font-size: 0.95rem;
-    color: var(--text-color);
-    margin-bottom: 2px;
-}
-
-.contact-info-item span,
-.contact-info-item a {
-    font-size: 0.95rem;
-    color: var(--secondary-color);
-}
-
-.contact-info-item a:hover {
-    color: var(--primary-color);
+.contact-form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .contact-form {
@@ -759,11 +719,6 @@ section#sobre.about-section {
     .skills-grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 20px;
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
     }
 }
 
